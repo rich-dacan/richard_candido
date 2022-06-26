@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(window).scroll(function () {
     // sticky navbar on scroll script
-    if (this.scrollY > 20) {
+    if (this.scrollY > 650) {
       $(".navbar").addClass("sticky");
     } else {
       $(".navbar").removeClass("sticky");
@@ -40,13 +40,6 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
-
-  //   var typed = new Typed(".typing-2", {
-  //     strings: ["Full Stack Loading ..."],
-  //     typeSpeed: 100,
-  //     backSpeed: 60,
-  //     loop: true,
-  //   });
 
   var typed = new Typed(".typing-3", {
     strings: ["Full Stack Loading ..."],

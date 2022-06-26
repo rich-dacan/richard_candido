@@ -79,15 +79,19 @@ section .title::after{
 
 /* navbar styling */
 .navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    z-index: 9990;
+    border-bottom: solid 2px #906516;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 20px 0;
     background: #111;
 }
 .navbar .max-width{
@@ -118,7 +122,6 @@ section .title::after{
     display: block;
     color: #906516;
     background-color: rgb(0, 0, 0);
-    opacity: .7;
     padding: 10px;
     border-radius: 8px;
     font-size: 18px;
@@ -126,17 +129,13 @@ section .title::after{
     margin-left: 25px;
     transition: all ease-in .25s;
 }
-.navbar .menu li a:hover{
-    opacity: 1;
-}
 .navbar.sticky .menu li a{
     background-color: transparent;
     opacity: 1;
 }
 .navbar.sticky .menu li a:hover{
-    background-color: #fff;
+    opacity: .7;
 }
-/* New editions // updates: */
 
 .wrapper{
     margin-top: 20px;
@@ -163,11 +162,10 @@ section .title::after{
   float: left;
   margin: 0 5px;
   overflow: hidden;
-  background: black;
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-  /* transition: all 1.3s ease-out; */
+  transition: all 1.3s ease-out;
 }
 .wrapper .button:hover{
   width: 200px;
@@ -179,8 +177,9 @@ section .title::after{
   text-align: center;
   border-radius: 50px;
   box-sizing: border-box;
+  background: black;
   line-height: 60px;
-  /* transition: all 0.7s ease; */
+  transition: all 0.7s ease;
 }
 .wrapper .button:nth-child(1):hover .icon{
   background: #4267B2;
@@ -280,7 +279,7 @@ color: #259453;
 /* home section styling */
 .home{
     display: flex;
-    background: url("./src/img/25334.jpg") no-repeat center;
+    background: url("../../src/img/010101.jpg") no-repeat center;
     height: 100vh;
     color: #E6F4F1;
     min-height: 500px;
@@ -381,7 +380,7 @@ color: #259453;
     opacity: .7;
 }
 
-/* services section styling */
+/* tech stack section */
 .services, .teams{
     color:#fff;
     background: #111;
@@ -397,50 +396,50 @@ color: #259453;
     border-radius: 6px;
     content: "My Technical Skills";
 }
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #ccc;
+.card{
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.card:hover{
     background: #906516;
 }
-.services .serv-content .card .box{
+.card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card p{
-    color: #111;
+.card p{
+    color: #fff;
 }
-.services .serv-content .card i{
+.card i{
     font-size: 50px;
     color: #111;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover p, .services .serv-content .card:hover .text{
-    color: #fff;
-}
-.services .serv-content .card .text{
+.card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-    color: #111;
+    color: #fff;
 }
 .text{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 .text img {
-    height: 200px;
+    height: 150px;
 }
+.text p{
+    margin-top: 20px;
+}
+
+
 /* skills section styling */
 
 .skills{
