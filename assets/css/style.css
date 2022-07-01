@@ -78,6 +78,16 @@ section .title::after{
 }
 
 /* navbar styling */
+.menu ul{
+    /* display: none; */
+}
+.menu ul:hover{
+    display: block;
+}
+.icon_flag{
+    height: 15px;
+    width: 15px;
+}
 .navbar{
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
@@ -247,6 +257,7 @@ color: #259453;
     cursor: pointer;
     display: none;
 }
+
 .scroll-up-btn{
     position: fixed;
     height: 45px;
@@ -331,6 +342,11 @@ color: #259453;
 #rich_dacan{
     border: 2px solid #906516;
     box-shadow: 0px 0px 25px 5px #906516;
+}
+#cv a{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .full_stack{
     color: #906516;
