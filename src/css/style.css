@@ -637,6 +637,10 @@ color: #259453;
     background: #906516!important;
 }
 
+.tech-stack{
+    color: #906516;
+}
+
 /* contact section styling */
 .contact .title::after{
     color: #906516;
