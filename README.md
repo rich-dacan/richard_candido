@@ -12,7 +12,7 @@
   
 </div>
 
-<img src ="./src/img/portfolio_home.png" />
+<img src ="./assets/img/portfolio_home.png" />
 
 <div style="display: inline_block">
   
