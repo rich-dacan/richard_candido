@@ -78,3 +78,14 @@ $(document).ready(function () {
     },
   });
 });
+
+const chk = document.getElementById("checkbox");
+
+chk.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+
+  // const teams = document.querySelector(".teams");
+
+  // // teams.classList.remove("teams");
+  // teams.classList.add("darkMode");
+});
