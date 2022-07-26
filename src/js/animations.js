@@ -24,6 +24,9 @@ sr.reveal(".home-content", { duration: 4000, origin: "left" });
 sr.reveal("#slide__right", { duration: 3000, origin: "right" });
 sr.reveal("#slide__left", { duration: 3000, origin: "left" });
 sr.reveal("#services", { duration: 3000, origin: "bottom" });
-sr.reveal(".contact-content", { duration: 3000, origin: "left" });
+sr.reveal("#contact__right", { duration: 3000, origin: "right" });
+sr.reveal("#contact__left", { duration: 3000, origin: "left" });
+
 // sr.reveal('.project', {duration : 3000, origin:'bottom'})
+
 // sr.reveal('.github-link', {duration : 3000, origin:'bottom'})
