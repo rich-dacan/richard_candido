@@ -84,8 +84,13 @@ const chk = document.getElementById("checkbox");
 chk.addEventListener("change", () => {
   document.body.classList.toggle("dark");
 
-  // const teams = document.querySelector(".teams");
+  const teams = document.querySelector(".teams");
+  const about = document.querySelector(".about");
+  const card = document.querySelector(".card");
 
-  // // teams.classList.remove("teams");
-  // teams.classList.add("darkMode");
+  teams.classList.remove("teams");
+  teams.classList.add("darkMode");
+
+  about.classList.add("darkMode");
+  card.classList.add("darkMode");
 });

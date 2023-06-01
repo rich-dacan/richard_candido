@@ -16,7 +16,7 @@ body.dark {
 }
 
 .darkMode{
-    background: #232c35;
+    background: #282828;
 }
 
 .checkbox {
@@ -39,8 +39,11 @@ body.dark {
 }
 
 .label .ball {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
+    margin-left: -2px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border: 1px solid #906516;
+    padding: 10px 13px;
     border-radius: 50px;
     position: absolute;
     left: 10px;
@@ -207,7 +210,6 @@ section .title::after{
 .wrapper{
     margin-top: 20px;
 }
-
 .wrapper a.button{
     display: inline-block;
     height: 60px;
