@@ -83,9 +83,9 @@ body.dark {
 }
 
 /* all similar content styling codes */
-section{
+/* section{
     padding: 100px 0;
-}
+} */
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -341,6 +341,10 @@ color: #259453;
 }
 .scroll-up-btn:hover{
     filter: brightness(90%);
+}
+
+.home, .about, .services, .teams, .contact {
+    padding: 100px 0;
 }
 
 
@@ -946,7 +950,7 @@ footer span a:hover{
     }
     #teams > div > h2{
         height: 150px;
-    } 
+    }
     .wrapper a.button{
         display: inline-block;
         height: 60px;
