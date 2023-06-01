@@ -1,4 +1,7 @@
-<script>
-  document.getElementById('github').addEventListener('click', function (){" "}
-  {gtag("event", "github", { debug_mode: true })})
-</script>;
+const github = document.getElementById("github");
+
+const trackFunction = () => {
+  gtag("event", "github", { debug_mode: true });
+};
+
+github.addEventListener("click", trackFunction);
